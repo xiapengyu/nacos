@@ -176,4 +176,10 @@ These are only part of the companies using Nacos, for reference only. If you are
 ![联合永道](https://img.alicdn.com/tfs/TB1CRAxDxYaK1RjSZFnXXa80pXa-190-190.jpg)
 ![明源云](https://img.alicdn.com/tfs/TB1.q14ErrpK1RjSZTEXXcWAVXa-219-219.jpg)
 
-
+1、下载源码
+2、将源码导入idea
+3、采用MySQL数据库运行
+首先新建数据库nacos_config，执行数据库脚本：distribution\conf\nacos-mysql.sql，修改数据库连接配置，注意数据库驱动包版本与实际安装的MySQL版本是否匹配
+4、修改启动参数(console)
+-Dnacos.standalone=true
+5、启动服务(console)
